@@ -20,9 +20,7 @@ file_path = "PROJECT_DATASET.xlsx"
 @st.cache_data
 def load_data(path):
    df = pd.read_excel("PROJECT_DATASET.xlsx", engine='openpyxl')
-
-
-    return df
+   return df
 
 def get_weather_data(lat, lon, api_key):
     url = f"https://api.tomorrow.io/v4/weather/forecast?location={lat},{lon}&apikey={api_key}"
