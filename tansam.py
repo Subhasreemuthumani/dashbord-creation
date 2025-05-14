@@ -19,7 +19,8 @@ file_path = "PROJECT_DATASET.xlsx"
 # ---------- FUNCTIONS ----------
 @st.cache_data
 def load_data(path):
-    df = pd.read_excel(r"C:\Users\subashree_2005\PROJECT_DATASET.xlsx", engine='openpyxl')
+   df = pd.read_excel("PROJECT_DATASET.xlsx", engine='openpyxl')
+
 
     return df
 
